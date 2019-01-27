@@ -1,21 +1,23 @@
 <style>
 
   a :visited{
-  color : none;
+  color : black;
   }
 
   a{
     text-decoration: none;
+
   }
   .hl{
     color : red;
   }
-  h1{
+
+  .banner_frame{
+
     font-size : 50px;
-    text-align : center;
     padding: 15px;
     border-bottom: 2px solid gray;
-    margin : 0px;
+
   }
 
   ol{
@@ -36,8 +38,10 @@
   }
 
   #banner{
+    display: block;
     width: 400px;
     height: auto;
+    margin : auto;
   }
   #grid{
     display : grid;
@@ -93,7 +97,5 @@
   }
 
 
-  body{
-    margin : 0px;
-  }
+
 </style>
