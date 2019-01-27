@@ -11,16 +11,28 @@
   <h1><a href="index.html" ><img src ="banner_pro.jpg" id="banner"></a></h1>
 
   <div id="grid">
-    <ol>
-        <li><a href="1.html">개요</a></li>
+    <ol id="menu">
+        <li><a href="1.html"class="list">개요</a></li>
         <br>
-        <li><a href="2.html">로고</a></li>
+        <li><a href="2.html"class="list">로고</a></li>
         <br>
-        <li><a href="3.html">역사</a></li>
-        
+        <li><a href="3.html"class="list">역사</a></li>
 
     </ol>
-<div id="text">
+
+    <div id="mode">
+      <input type ="button" value ="Night" onclick="
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white'">
+
+      <input type ="button" value ="Day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black'">
+
+    </div>
+
+<div class="text">
+
 <h2>역사</h2>
 
   <p style = "margin-top:30px">1957년 미국 오리건 대학교에서 만난 운동선수 필 나이트(Phil Knight)와 코치 빌 바우어만(Bill Bowerman)에서부터 시작되었다.</p>

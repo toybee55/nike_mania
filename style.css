@@ -1,7 +1,14 @@
 <style>
+
+  a :visited{
+  color : none;
+  }
+
   a{
-    color : black;
     text-decoration: none;
+  }
+  .hl{
+    color : red;
   }
   h1{
     font-size : 50px;
@@ -10,25 +17,59 @@
     border-bottom: 2px solid gray;
     margin : 0px;
   }
+
   ol{
-    text-decoration: none;
+
     font-size: 30px;
-    border-right: 2px solid gray;
     margin : 0px;
     padding-left : 60px;
     padding-top: 30px;
+    padding-right: 30px;
     padding-bottom: 30px;
 
   }
+
+  #fr_image{
+    margin: auto;
+    display: block;
+    padding-top: 30px;
+  }
+
   #banner{
     width: 400px;
     height: auto;
   }
   #grid{
     display : grid;
-    grid-template-columns: 200px 1fr;
+     grid-template-columns: 160px 1fr;
+     grid-template-rows:  auto 50px;
+    grid-template-areas:
+      "lu ri"
+      "ld ri";
     border-bottom: 2px solid gray;
+  }
+  #menu{
 
+
+    grid-area: lu;
+    border-bottom:  2px solid gray;
+
+  }
+
+  #mode{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: ld;
+  }
+
+  .text{
+    grid-area: ri;
+    display: block;
+    padding-left :40px;
+    padding-right:30px;
+    border-left: 2px solid gray;
   }
 
   #right_side{
@@ -39,21 +80,20 @@
     padding-bottom: 30px;
 
   }
-  #text{
-    padding-left :40px;
-    padding-right:30px;
-  }
-  li{
-    text-decoration: none;
-  }
+
   @media (max-width : 800px) {
     #grid {
       display: block;
     }
+
     ol{
         border-right:none;
         border-bottom: 2px solid gray;
       }
   }
 
+
+  body{
+    margin : 0px;
+  }
 </style>
