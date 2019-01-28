@@ -6,17 +6,24 @@
     "mode content"
     "menu content"
     "reply reply";
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 150px 1fr;
     grid-template-rows: 60px 40px 1fr auto;
   }
   .header{
   grid-area: hd;
   border-bottom: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   }
 
   .mode{
     grid-area: mode;
     border-bottom: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   }
 
@@ -24,10 +31,11 @@
     grid-area: content;
     border-left: 2px solid gray;
     padding : 10px;
+
   }
   .menu{
     grid-area: menu;
-    font-size : 25px;
+    font-size : 30px;
 
   }
 
@@ -37,21 +45,24 @@
 
   }
 
+
   #banner{
-    display : block;
-    margin : auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   }
+
   #fr_image{
-    display : block;
-    margin : auto;
+    grid-area: content;
+    border-left: 2px solid gray;
+    padding : 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .mode_button{
-    margin-top : 8px;
+  #menu_list{
+    margin-left : 10px;
 
-  }
-
-  .list{
-    text-decoration: none;
   }
