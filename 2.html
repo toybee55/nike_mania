@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style2.css">
 
-
+    <script src='nightmode.js'></script>
 
   </head>
 
@@ -16,26 +16,15 @@
 
     <div class="header">
 
-      <a href="index.html" ><img src ="https://i.imgur.com/yoHBfhN.jpg"
-      id="banner"></a>
+      <a href="index.html" ><img src ="https://i.imgur.com/yoHBfhN.jpg"></a>
 
     </div>
 
-    <div class="mode">
+      <div class="mode">
 
         <input id="night_day" type="button" value="Night" onclick="
-        if(document.querySelector('#night_day').value === 'Night'){
-          document.querySelector('body').style.backgroundColor ='black';
-          document.querySelector('body').style.color ='white';
-          document.querySelector('#night_day').value ='Day';
-        }else {
-          document.querySelector('body').style.backgroundColor ='white';
-          document.querySelector('body').style.color ='black';
-          document.querySelector('#night_day').value ='Night';
-      }
-      ">
-
-    </div>
+        mode_fuction(this)">
+      </div>
     <div class="menu">
 
       <ol id="menu_list">
@@ -61,7 +50,6 @@
       <p>
         <div id="disqus_thread"></div>
         <script>
-
         /**
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
